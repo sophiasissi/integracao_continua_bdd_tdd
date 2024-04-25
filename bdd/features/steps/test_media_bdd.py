@@ -9,6 +9,6 @@ def step_impl(context, num1, num2):
 def step_impl(context):
     context.resultado = (context.num1 + context.num2) / 2
 
-@then('o resultado deve ser {resultado:d}')
-def step_impl(context, resultado):
-    assert context.resultado == resultado, f"Resultado incorreto. Esperado: {resultado}. Obtido: {context.resultado}"
+@then('o resultado deve ser 2.5')
+def step_impl(context):
+    assert context.resultado == 2.5, f"Resultado incorreto. Esperado: 2.5. Obtido: {context.resultado}"
